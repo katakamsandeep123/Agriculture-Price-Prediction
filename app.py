@@ -35,7 +35,7 @@ if app_mode=='Home':
     st.title("AGRICULTURE PRICE PREDICTION DASHBOARD")
     st.write("Agriculture is an important sector in India. It is indispensible for the sustenance and growth of the Indian economy. On an average, about 70% of the households and 10% of the urban population is dependent on agriculture as their source of livelihood. Today, India is a major supplier of several agricultural commodities like tea, coffee, rice, spices, oil meals, fresh fruits, fresh vegetables, meat and its preparations and marine products to the international market. India is a large producer of several agricultural products. In terms of quantity of production, India is the top producer in the world in milk, and second largest in wheat and rice. ")
     st.write("**Here are some visualizations regarding our project these will provide some analysis and price spent on each place.**")
-    df=pd.read_csv(r"C:\Users\sandeep\OneDrive\Desktop\Internship\Agricultural-Price-Prediction-and-Visualization-on-Android-App-master\total.csv")
+    df=pd.read_csv("Agricultural-Price-Prediction-and-Visualization-on-Android-App-master\total.csv")
     
     #SCATTER PLOT
     st.header("SCATTER PLOT")
