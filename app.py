@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Agriculture Price Prediction", page_icon="🌾")
 
 # Load image
-image = Image.open(r"C:\Users\sandeep\OneDrive\Desktop\Internship\pic_1.jpeg")
+image = Image.open("pic_1.jpeg")
 
 
 @st.cache(suppress_st_warning=True)
@@ -97,10 +97,10 @@ elif app_mode=="Prediction":
     st.title('Agriculture Price Prediction')
     st.image(image, caption='My Image', use_column_width=True)
     # Load the model and label encoders
-    model = pickle.load(open(r"C:\Users\sandeep\OneDrive\Desktop\Internship\agriculture_price_prediction_model.pkl", 'rb'))
-    state_encoder = pickle.load(open(r"C:\Users\sandeep\OneDrive\Desktop\Internship\state_encoder.pkl", 'rb'))
-    market_encoder = pickle.load(open(r"C:\Users\sandeep\OneDrive\Desktop\Internship\market_encoder.pkl", 'rb'))
-    commodity_encoder = pickle.load(open(r"C:\Users\sandeep\OneDrive\Desktop\Internship\commodity_encoder.pkl", 'rb'))
+    model = pickle.load(open("agriculture_price_prediction_model.pkl", 'rb'))
+    state_encoder = pickle.load(open("state_encoder.pkl", 'rb'))
+    market_encoder = pickle.load(open("market_encoder.pkl", 'rb'))
+    commodity_encoder = pickle.load(open("commodity_encoder.pkl", 'rb'))
     
     
     # Define a function to encode the input values
